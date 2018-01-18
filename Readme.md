@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александра Яковлева](https://up.htmlacademy.ru/adaptive/13/user/55195).
-* Наставник: `Неизвестно`.
+* Наставник: `Анастасия Шевченко`.
 
 ---
 
