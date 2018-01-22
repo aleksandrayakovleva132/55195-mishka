@@ -10,8 +10,8 @@
         <a class="main-nav__logo logo" href="index.html">
           <img src="" alt="Мишка" width="" height="">
         </a>
-        <button class="main-nav__menu">Открыть меню</button>
-        <div class="main-nav__wrapper">
+        <button class="main-nav__toggle">Открыть меню</button>
+        <div class="main-nav__menu">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -31,91 +31,104 @@
 
     <main class="page-main">
       <header class="form-header">
-        <h1 class="form-header__title page-title">Вязание на заказ</h1>
+        <h1 class="form-header__title title-page">Вязание на заказ</h1>
         <p class="form-header__description">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами,
           чтобы уточнить детали.
         </p>
       </header>
-      <form action="">
-        <div class="type">
+      <form class="order-form" action="">
+        <div class="order-form__section section--type">
           <h2 class="type__title form-title">тип</h2>
-          <ul class="type__list">
-            <li class="type__item">
-              <input type="radio" name="type" id="accessories" checked>
-              <label for="accessories">Аксессуары для интерьера</label>
-            </li>
-            <li class="type__item">
-              <input type="radio" name="type" id="toy">
-              <label for="toy">Детская игрушка</label>
-            </li>
-          </ul>
+          <div class="field__radio">
+            <input class="field-radio__input" type="radio" name="type" id="accessories" checked>
+            <label class="field-radio__label" for="accessories">Аксессуары для интерьера</label>
+          </div>
+          <div class="field__radio">
+            <input class="field-radio__input" type="radio" name="type" id="toy">
+            <label class="field-radio__label" for="toy">Детская игрушка</label>
+          </div>
         </div>
-        <div class="color">
+
+        <div class="order-form__section section--color">
           <h2 class="color__title form-title">тип</h2>
-          <ul class="color__list">
-            <li class="color__item">
-              <input type="checkbox" name="color-white" id="white" checked>
-              <label for="white">Белый</label>
-            </li>
-            <li class="color__item">
-              <input type="checkbox" name="color-gray" id="gray" checked>
-              <label for="gray">Серый</label>
-            </li>
-            <li class="color__item">
-              <input type="checkbox" name="color-tiffany" id="tiffany">
-              <label for="tiffany">«Тиффани»</label>
-            </li>
-            <li class="color__item">
-              <input type="checkbox" name="color-black" id="black">
-              <label for="black">Черный</label>
-            </li>
-            <li class="color__item">
-              <input type="checkbox" name="color-pink" id="pink">
-              <label for="pink">Розовый</label>
-            </li>
-            <li class="color__item">
-              <input type="checkbox" name="color-orange" id="orange">
-              <label for="orange">Оранжевый</label>
-            </li>
-          </ul>
+          <div class="field__checkbox">
+            <input class="field-checkbox__input" type="checkbox" name="color-white" id="white" checked>
+            <label class="field-checkbox__label" for="white">Белый</label>
+          </div>
+          <div class="field__checkbox">
+            <input class="field-checkbox__input" type="checkbox" name="color-gray" id="gray" checked>
+            <label class="field-checkbox__label" for="gray">Серый</label>
+          </div>
+          <div class="field__checkbox">
+            <input class="field-checkbox__input" type="checkbox" name="color-tiffany" id="tiffany">
+            <label class="field-checkbox__label" for="tiffany">«Тиффани»</label>
+          </div>
+          <div class="field__checkbox">
+            <input class="field-checkbox__input" type="checkbox" name="color-black" id="black">
+            <label class="field-checkbox__label" for="black">Черный</label>
+          </div>
+          <div class="field__checkbox">
+            <input class="field-checkbox__input" type="checkbox" name="color-pink" id="pink">
+            <label class="field-checkbox__label" for="pink">Розовый</label>
+          </div>
+          <div class="field__checkbox">
+            <input class="field-checkbox__input" type="checkbox" name="color-orange" id="orange">
+            <label class="field-checkbox__label" for="orange">Оранжевый</label>
+          </div>
         </div>
-        <div class="name">
+
+        <div class="order-form__section section--name">
           <h2 class="name__title form-title">фио</h2>
-          <legend for="name">Имя:</legend>
-          <input type="text" name="name" placeholder="Введите ваше имя*">
+          <div class="field__text">
+            <label class="field-text__label" for="name">Имя:</label>
+            <input class="field-text__input" type="text" name="name" placeholder="Введите ваше имя*">
+          </div>
 
-          <legend for="surname">Фамилия:</legend>
-          <input type="text" name="surname" placeholder="Укажите фамилию*">
-
-          <legend for="secondname">Отчество:</legend>
-          <input type="text" name="secondname" placeholder="Отчество, если желаете">
-
+          <div class="field__text">
+            <label class="field-text__label" for="surname">Фамилия:</label>
+            <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию*">
+          </div>
+          <div class="field__text">
+            <label class="field-text__label" for="secondname">Отчество:</label>
+            <input class="field-text__input" type="text" name="secondname" placeholder="Отчество, если желаете">
+          </div>
         </div>
-        <div class="phone">
+
+        <div class="order-form__section section--phone">
           <h2 class="phone__title form-title">тел</h2>
-          <input type="tel" name="phone" placeholder="+7 XXX XX XX*">
+          <div class="field__tel">
+            <label class="visually-hidden" for="phone">Телефон</label>
+            <input class="field-tel__input" type="tel" name="phone" placeholder="+7 XXX XX XX*">
+          </div>
         </div>
-        <div class="email">
+
+        <div class="order-form__section section--email">
           <h2 class="email__title form-title">e-mail</h2>
-          <input type="email" name="email" placeholder="Ваш Email*">
-
+          <div class="field__email">
+            <label class="visually-hidden" for="email">Емайл</label>
+            <input class="field-email__input" type="email" name="email" placeholder="Ваш Email*">
+          </div>
         </div>
-        <div class="another">
+
+        <div class="order-form__section section--another">
           <h2 class="another__title form-title">доп</h2>
-          <textarea name="anothe" rows="4" cols="40">
-            Опишите все ваши пожелания к заказу
-          </textarea>
+          <div class="field__textarea">
+            <label class="visually-hidden" for="another">Дополнительные комментарии</label>
+            <textarea class="form__textarea" name="another" rows="4" cols="40">
+              Опишите все ваши пожелания к заказу
+            </textarea>
+          </div>
           <small><sup>*</sup>Поля обязательные для заполнения</small>
-
         </div>
-        <button class="form__button button" type="button" name="button">Отправить заказ</button>
+
+        <button class="order-form__button button" type="button" name="button">Отправить заказ</button>
       </form>
 
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer_social social">
+        <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--instagram" href="#">
@@ -128,7 +141,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link twitter" href="#">
+              <a class="social__link--twitter" href="#">
                 Мы в Твиттере
               </a>
             </li>

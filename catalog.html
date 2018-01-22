@@ -11,8 +11,8 @@
         <a class="main-nav__logo logo" href="index.html">
           <img src="" alt="Мишка" width="" height="">
         </a>
-        <button class="main-nav__menu">Открыть меню</button>
-        <div class="main-nav__wrapper">
+        <button class="main-nav__toggle">Открыть меню</button>
+        <div class="main-nav__menu">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link">Каталог товаров</a>
@@ -32,7 +32,7 @@
 
     <main class="page-main">
       <section class="catalog">
-        <h1 class="catalog__title page__title">Каталог товаров</h2>
+        <h1 class="catalog__title title-page">Каталог товаров</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
             <img class="catalog__image" src="" alt="Зайчик-попрыгайчик" width="" height="">
@@ -40,7 +40,7 @@
             <p class="catalog__description">Рост 30 см, вес 200 г</p>
             <a class="catalog__buy" href="">
               <b class="catalog__price">1 200 руб.</b>
-              <img class="catalog__bascet" src="" alt="добавить в корзину">
+              <img class="catalog__basket" src="" alt="добавить в корзину">
             </a>
           </li>
           <li class="catalog__item">
@@ -60,25 +60,25 @@
               <b class="catalog__price">1500 руб.</b>
               <img class="catalog__bascet" src="" alt="добавить в корзину">
             </a>
-            <article class="production">
-              <h2 class="production__title title">Процесс производства</h2>
-              <video class="production__video" src="" autoplay poster="posterimage.jpg">
-
-              </video>
-              <p сlass="production__description">
-                По просьбам наших любимых фолловеров мы сняли для вас подробное
-                видео о том, как появляются наши товары.
-              </p>
-              <button class="production__button button" type="button" name="button">сделать заказ</button>
-            </article>
           </li>
         </ul>
       </section>
+      <article class="production">
+        <h2 class="production__title title">Процесс производства</h2>
+        <video class="production__video" src="" autoplay poster="posterimage.jpg">
+
+        </video>
+        <p сlass="production__description">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное
+          видео о том, как появляются наши товары.
+        </p>
+        <button class="production__button button" type="button" name="button">сделать заказ</button>
+      </article>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer_social social">
+        <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--instagram" href="#">
@@ -91,7 +91,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link twitter" href="#">
+              <a class="social__link--twitter" href="#">
                 Мы в Твиттере
               </a>
             </li>
