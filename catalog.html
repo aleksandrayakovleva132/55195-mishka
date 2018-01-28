@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка</title>
+    <link href="source/css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="page-header">
       <nav class="main-nav">
         <a class="main-nav__logo logo" href="index.html">
-          <img src="" alt="Мишка" width="" height="">
+          <img src="source/img/logo-mobile.svg" alt="Мишка" width="" height="">
         </a>
-        <button class="main-nav__toggle">Открыть меню</button>
+        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__menu">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -32,40 +33,42 @@
 
     <main class="page-main">
       <section class="catalog">
-        <h1 class="catalog__title title-page">Каталог товаров</h2>
+        <div class="catalog__wrapper-title wrapper-title">
+          <h1 class="catalog__title title-page">Каталог товаров</h2>
+        </div>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <img class="catalog__image" src="" alt="Зайчик-попрыгайчик" width="" height="">
+            <img class="catalog__image" src="source/img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="196">
             <h2 class="catalog__title title">Зайчик-попрыгайчик</h2>
             <p class="catalog__description">Рост 30 см, вес 200 г</p>
             <a class="catalog__buy" href="">
               <b class="catalog__price">1 200 руб.</b>
-              <img class="catalog__basket" src="" alt="добавить в корзину">
+              <img class="catalog__basket" src="source/img/icon-cart.svg" alt="добавить в корзину" width="20" height="19">
             </a>
           </li>
           <li class="catalog__item">
-            <img class="catalog__image" src="" alt="Корзинка для белья" width="" height="">
+            <img src="source/img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="196">
             <h2 class="catalog__title title">Корзинка для белья</h2>
             <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
             <a class="catalog__buy" href="">
               <b class="catalog__price">690 руб.</b>
-              <img class="catalog__bascet" src="" alt="добавить в корзину">
+              <img class="catalog__bascet" src="source/img/icon-cart.svg" alt="добавить в корзину">
             </a>
           </li>
           <li class="catalog__item">
-            <img class="catalog__image" src="" alt="Большая корзинка для игрушек" width="" height="">
+            <img class="catalog__image" src="source/img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="196">
             <h2 class="catalog__title title">Большая корзинка для игрушек</h2>
             <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
             <a class="catalog__buy" href="">
               <b class="catalog__price">1500 руб.</b>
-              <img class="catalog__bascet" src="" alt="добавить в корзину">
+              <img class="catalog__bascet" src="source/img/icon-cart.svg" alt="добавить в корзину">
             </a>
           </li>
         </ul>
       </section>
       <article class="production">
         <h2 class="production__title title">Процесс производства</h2>
-        <video class="production__video" src="" autoplay poster="posterimage.jpg">
+        <video class="production__video" src="" autoplay poster="source/img/video-mobile@1x.jpg" width="100%" height="152">
 
         </video>
         <p сlass="production__description">
@@ -82,17 +85,17 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--instagram" href="#">
-                Мы в Инстагрме
+                <span class="visually-hidden">Мы в Инстагрме</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#">
-                Мы в Фейсбуке
+                <span class="visually-hidden">Мы в Фейсбуке</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link--twitter" href="#">
-                Мы в Твиттере
+                <span class="visually-hidden">Мы в Твиттере</span>
               </a>
             </li>
           </ul>
@@ -100,7 +103,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href=""><img src="" alt="HTML Academy"></a>
+        <a class="copyright__link" href=""><img src="source/img/logo-htmlacademy.svg" alt="HTML Academy"></a>
       </div>
     </footer>
   </body>

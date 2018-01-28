@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка</title>
+    <link href="source/css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
         <a class="main-nav__logo logo" href="index.html">
-          <img src="" alt="Мишка" width="" height="">
+          <img src="source/img/logo-mobile.svg" alt="Мишка" width="" height="">
         </a>
-        <button class="main-nav__toggle">Открыть меню</button>
+        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню </span></button>
         <div class="main-nav__menu">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -30,23 +31,25 @@
     </header>
 
     <main class="page-main">
-      <header class="form-header">
-        <h1 class="form-header__title title-page">Вязание на заказ</h1>
+      <section class="form-header">
+        <div class="form-heade__wrapper-title wrapper-title">
+          <h1 class="form-header__title title-page">Вязание на заказ</h1>
+        </div>
         <p class="form-header__description">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами,
           чтобы уточнить детали.
         </p>
-      </header>
+      </section>
       <form class="order-form" action="">
         <div class="order-form__section section--type">
-          <h2 class="type__title form-title">тип</h2>
+          <h2 class="type__title form-title">тип</h2> <!--Возможно type__title не нужен -->
           <div class="field__radio">
             <input class="field-radio__input" type="radio" name="type" id="accessories" checked>
-            <label class="field-radio__label" for="accessories">Аксессуары для интерьера</label>
+            <label class="field-radio__label label" for="accessories">Аксессуары для интерьера</label>
           </div>
           <div class="field__radio">
             <input class="field-radio__input" type="radio" name="type" id="toy">
-            <label class="field-radio__label" for="toy">Детская игрушка</label>
+            <label class="field-radio__label label" for="toy">Детская игрушка</label>
           </div>
         </div>
 
@@ -54,43 +57,43 @@
           <h2 class="color__title form-title">тип</h2>
           <div class="field__checkbox">
             <input class="field-checkbox__input" type="checkbox" name="color-white" id="white" checked>
-            <label class="field-checkbox__label" for="white">Белый</label>
+            <label class="field-checkbox__label label" for="white">Белый</label>
           </div>
           <div class="field__checkbox">
             <input class="field-checkbox__input" type="checkbox" name="color-gray" id="gray" checked>
-            <label class="field-checkbox__label" for="gray">Серый</label>
+            <label class="field-checkbox__label label" for="gray">Серый</label>
           </div>
           <div class="field__checkbox">
             <input class="field-checkbox__input" type="checkbox" name="color-tiffany" id="tiffany">
-            <label class="field-checkbox__label" for="tiffany">«Тиффани»</label>
+            <label class="field-checkbox__label label" for="tiffany">«Тиффани»</label>
           </div>
           <div class="field__checkbox">
             <input class="field-checkbox__input" type="checkbox" name="color-black" id="black">
-            <label class="field-checkbox__label" for="black">Черный</label>
+            <label class="field-checkbox__label label" for="black">Черный</label>
           </div>
           <div class="field__checkbox">
             <input class="field-checkbox__input" type="checkbox" name="color-pink" id="pink">
-            <label class="field-checkbox__label" for="pink">Розовый</label>
+            <label class="field-checkbox__label label" for="pink">Розовый</label>
           </div>
           <div class="field__checkbox">
             <input class="field-checkbox__input" type="checkbox" name="color-orange" id="orange">
-            <label class="field-checkbox__label" for="orange">Оранжевый</label>
+            <label class="field-checkbox__label label" for="orange">Оранжевый</label>
           </div>
         </div>
 
         <div class="order-form__section section--name">
           <h2 class="name__title form-title">фио</h2>
           <div class="field__text">
-            <label class="field-text__label" for="name">Имя:</label>
+            <label class="field-text__label label" for="name">Имя:</label>
             <input class="field-text__input" type="text" name="name" placeholder="Введите ваше имя*">
           </div>
 
           <div class="field__text">
-            <label class="field-text__label" for="surname">Фамилия:</label>
+            <label class="field-text__label label" for="surname">Фамилия:</label>
             <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию*">
           </div>
           <div class="field__text">
-            <label class="field-text__label" for="secondname">Отчество:</label>
+            <label class="field-text__label label" for="secondname">Отчество:</label>
             <input class="field-text__input" type="text" name="secondname" placeholder="Отчество, если желаете">
           </div>
         </div>
@@ -132,17 +135,17 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--instagram" href="#">
-                Мы в Инстагрме
+                <span class="visually-hidden">Мы в Инстагрме</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#">
-                Мы в Фейсбуке
+                <span class="visually-hidden">Мы в Фейсбуке</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link--twitter" href="#">
-                Мы в Твиттере
+                <span class="visually-hidden">Мы в Твиттере</span>
               </a>
             </li>
           </ul>
@@ -150,7 +153,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href=""><img src="" alt="HTML Academy"></a>
+        <a class="copyright__link" href=""><img src="source/img/logo-htmlacademy.svg" alt="HTML Academy"></a>
       </div>
     </footer>
 
