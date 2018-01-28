@@ -1,0 +1,28 @@
+.social {
+  &__list {
+    list-style: none;
+  }
+
+  &__link--instagram {
+    display: block;
+    width: 21px;
+    height: 20px;
+    background-image: url(../img/icon-insta.svg);
+  }
+
+  &__link--facebook {
+    display: block;
+    width:15px;
+    height:28px;
+    background-image: url(../img/icon-fb.svg);
+  }
+
+  &__link--twitter {
+    display: block;
+    width: 23px;
+    height:20px;
+    background-image: url(../img/icon-twitter.svg);
+  }
+
+
+}

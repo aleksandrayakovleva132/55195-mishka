@@ -1,0 +1,19 @@
+.advantages {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    font-size: 17px;
+    line-height: 20px;
+
+    font-weight: 700;
+
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 20px; /*временно написала, буду вставлять иконки, поменяю*/
+  }
+
+}
