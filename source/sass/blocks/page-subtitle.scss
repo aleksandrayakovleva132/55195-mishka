@@ -1,7 +1,13 @@
-.page-subtitle {
-  color: $light-tiffany;
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
+.page-main__wrapper-title {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 282px;
+  background-image: url(../img/hero-mobile@1x.jpg);
+  background-position: center;
+}
+
+.page-main__title {
+  text-align: center;
+  max-width: 245px;
 }
