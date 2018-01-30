@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="page-header">
       <nav class="main-nav">
         <a class="main-nav__logo logo"> <!--logo возможно удалить -->
-          <img src="" alt="Мишка" width="" height="">
+          <img src="img/logo-mobile.svg" width="85" height="35" alt="">
         </a>
-        <button class="main-nav__toggle">Открыть меню</button>
+        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню </span></button>
         <div class="main-nav__menu">
           <ul class="main-nav__list site-list"> <!--site-list возможно удалить -->
             <li class="site-list__item">
@@ -31,13 +32,14 @@
     </header>
 
     <main class="page-main">
-
-      <h1 class="page-main__title title-page">Милые штуки ручной работы для дома</h1>
+      <div class="page-main__wrapper-title">
+        <h1 class="page-main__title title-page">Милые штуки ручной работы&nbspдля дома</h1>
+      </div>
 
       <section class="products">
         <ul class="products__list">
-          <li class="products__item">Предметы интерьера</li>
-          <li class="products__item">Детские игрушки</li>
+          <li class="products__item products__item--interior"><span class="products__item--wrapper">Предметы интерьера</span></li>
+          <li class="products__item products__item--toys"><span class="products__item--wrapper">Детские игрушки</span></li>
         </ul>
       </section>
 
@@ -64,7 +66,7 @@
           </tr>
         </table>
         <div class="product-item__image">
-          <img src="" alt="Вязанные корзинки" width="260" height="315">
+          <img src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки" width="260" height="315">
         </div>
         <div class="product-item__price">
           Цена: 990 руб.
@@ -93,17 +95,17 @@
           <cite class="reviews__name">Анастасия Красильникова</cite>
           <address class="reviews__adress">@misssssiskras</address>
         </blockquote>
-        <button type="button" name="button">Предыдущий отзыв</button>
-        <button type="button" name="button">Следущий отзыв</button>
-        <button clss="reviews__button button" type="button" name="button">Написать</button>
+        <button class="reviews__previous" type="button" name="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
+        <button class="reviews__next" type="button" name="button"><span class="visually-hidden">Следущий отзыв</span></button>
+        <button class="reviews__button button" type="button" name="button">Написать</button>
       </section>
 
-      <section class="contacts">
+      <address class="contacts">
         <h2 class="contacts__title title">Контакты</h2>
         <table>
           <tr>
             <td>e-mail:</td>
-            <td><a href="">info@mimimishkashop.ru</a></td>
+            <td><a class="contacts__link" href="">info@mimimishkashop.ru</a></td>
           </tr>
           <tr>
             <td>адрес:</td>
@@ -115,7 +117,10 @@
           </tr>
         </table>
         <button class="contacts__button button" type="button" name="button">напишите нам</button>
-      </section>
+        <div class="contacts__map">
+          <img src="source/img/map-mobile@1x.jpg" alt=".Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="100%" height="458">
+        </div>
+      </adress>
 
       <footer class="page-footer">
         <div class="page-footer__wrapper">
@@ -123,17 +128,17 @@
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link social__link--instagram" href="#">
-                  Мы в Инстагрме
+                  <span class="visually-hidden">Мы в Инстагрме</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--facebook" href="#">
-                  Мы в Фейсбуке
+                  <span class="visually-hidden">Мы в Фейсбуке</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link--twitter" href="#">
-                  Мы в Твиттере
+                  <span class="visually-hidden">Мы в Твиттере</span>
                 </a>
               </li>
             </ul>
@@ -141,7 +146,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href=""><img src="" alt="HTML Academy"></a>
+          <a class="copyright__link" href=""><img src="source/img/logo-htmlacademy.svg" alt="HTML Academy" width="27" height="34"></a>
         </div>
       </footer>
     </main>

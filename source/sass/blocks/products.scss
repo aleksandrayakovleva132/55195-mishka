@@ -1,0 +1,23 @@
+.products__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  max-width: 320px;
+}
+
+.products__item {
+  box-sizing: border-box;
+  width: 320px;
+  height: 103px;
+  padding-top: 28px;
+  padding-left: 28px;
+}
+
+.products__item--wrapper {
+  display: inline-block;
+  max-width: 130px;
+}

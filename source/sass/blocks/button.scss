@@ -1,0 +1,11 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 260px;
+  height: 52px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $dark-gray;
+  border: 2px solid $dark-gray;
+  background-color: transparent;
+}
