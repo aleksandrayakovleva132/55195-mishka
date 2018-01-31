@@ -29,13 +29,11 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     width: 768px;
-    background-color: orange;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
     width: 1150px;
-    background-color: green;
   }
 }
