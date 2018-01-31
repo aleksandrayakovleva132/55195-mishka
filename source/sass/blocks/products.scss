@@ -21,3 +21,11 @@
   display: inline-block;
   max-width: 130px;
 }
+
+.products__item--interior {
+  background-color: $light-tiffany;
+}
+
+.products__item--toys {
+  background-color: $dark-tiffany;
+}

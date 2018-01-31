@@ -1,0 +1,26 @@
+ .site-wrapper {
+  width: 320px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  background-color: gray;
+ }
+
+@media (min-width: $tablet-width) {
+  .site-wrapper {
+    width: 768px;
+    background-color: pink;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-wrapper {
+    width: 1150px;
+    background-color: lightblue;
+  }
+}

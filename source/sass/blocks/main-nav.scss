@@ -1,12 +1,41 @@
+.main-nav {
+  display: flex;
+  box-sizing: border-box;
+  min-height: 90px;
+  border-bottom: 1px solid $gray;
+}
+
+.main-nav__logo {
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .main-nav__toggle {
   display: block;
   border: none;
   width: 20px;
   height: 14px;
+
+  margin-top: auto;
+  margin-bottom: auto;
   background-image: url("../img/icon-menu-open.svg");
   background-color: transparent;
 }
 
 .main-nav__list {
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 768px;
+    background-color: orange;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 1150px;
+    background-color: green;
+  }
 }
