@@ -1,8 +1,14 @@
 .main-nav {
   display: flex;
   box-sizing: border-box;
-  min-height: 90px;
+  height: 90px;
   border-bottom: 1px solid $gray;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    height: 90px;
+  }
 }
 
 .main-nav__logo {
@@ -10,20 +16,33 @@
   margin-top: auto;
   margin-bottom: auto;
 }
+
 .main-nav__toggle {
   display: block;
   border: none;
   width: 20px;
   height: 14px;
-
   margin-top: auto;
   margin-bottom: auto;
   background-image: url("../img/icon-menu-open.svg");
   background-color: transparent;
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
 .main-nav__list {
   list-style: none;
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+.main-nav__list {
+  display: inline-block;
+  }
 }
 
 @media (min-width: $tablet-width) {

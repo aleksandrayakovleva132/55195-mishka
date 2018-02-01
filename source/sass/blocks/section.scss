@@ -1,0 +1,27 @@
+@media (min-width: $tablet-width) {
+  .section--color {
+    background-color: $light-gray;
+  }
+}
+
+.section--phone {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .section--phone {
+    background-color: $light-gray;
+  }
+}
+
+.section--email {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .section--email {
+    background-color: $light-gray;
+  }
+}

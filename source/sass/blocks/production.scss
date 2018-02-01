@@ -1,0 +1,32 @@
+.production {
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  border: 1px solid $light-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .production {
+    width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production {
+    width: 1050px;
+    display: flex;
+  }
+}
+
+.production__title {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.production__button {
+  width: 192px;
+  height: 52px;
+  font-size: 17px;
+  margin-bottom: 32px;
+}

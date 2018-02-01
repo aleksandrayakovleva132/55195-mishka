@@ -1,0 +1,21 @@
+.form-header__title {
+  width: 100%;
+}
+
+.form-header__description {
+  width: 260px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .form-header__description {
+    width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-header__description {
+    width: 700px;
+  }
+}
