@@ -1,20 +1,17 @@
-.page-footer {
-  background-color: $light-gray;
+.page-header {
   width: 320px;
-  display: flex;
-  padding: 0;
-  margin: 0;
+  height: 80px;
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-header {
     width: 768px;
-    margin: 0;
+    height: 90px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer {
+  .page-header {
     width: 1150px;
   }
 }

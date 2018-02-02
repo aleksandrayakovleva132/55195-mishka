@@ -1,5 +1,26 @@
+.advantages {
+  width: 264px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(46, 172, 181);
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: 1050px;
+  }
+}
+
+
 .advantages__list {
-  style-list: none;
+  list-style: none;
   padding: 0;
   margin: 0;
   font: 17px;
@@ -8,6 +29,7 @@
 }
 
 .advantages__item {
+  display: inline-block;
   position: relative;
   margin-bottom: 20px; /*временно*/
 }

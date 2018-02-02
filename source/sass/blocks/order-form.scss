@@ -1,0 +1,17 @@
+.order-form {
+  width: 260px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form {
+    width: 1150px;
+  }
+}

@@ -3,4 +3,35 @@
   line-height: 24px;
   font-weight: 700;
   color: $dark-gray;
+  display: inline-block;
+  margin-bottom: 27px;
+}
+
+.product-item {
+  width: 264px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .product-item {
+    width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-item {
+    width: 1050px;
+  }
+}
+
+.product-item__title {
+  margin: 0;
+  padding: 0;
+}
+
+.product-item__image {
+  margin-bottom: 27px;
+  margin-left: auto;
+  margin-right: auto;
 }

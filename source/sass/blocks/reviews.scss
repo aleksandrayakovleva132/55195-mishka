@@ -1,8 +1,28 @@
+.reviews {
+  width: 264px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: 1050px;
+  }
+}
+
+
 .reviews__name {
   font-size: 17px;
   font-weight: 700;
   font-style: normal;
 }
+
 
 .reviews__adress {
   font-style: normal;

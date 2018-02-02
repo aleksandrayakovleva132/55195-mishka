@@ -1,8 +1,31 @@
 .contacts {
   font-style: normal;
+  width: 264px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 1050px;
+  }
 }
 
 .contacts__link {
   display: inline-block;
   border-bottom: 1px solid $light-tiffany;
+}
+
+.contacts__map {
+  margin-bottom: 39px;
+}
+
+.contacts__button {
+  margin-bottom: 39px;
 }
