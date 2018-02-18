@@ -1,0 +1,86 @@
+.field-text__wrapper {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 260px;
+  margin-top: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .field-text__wrapper {
+    width: 501px;
+    height: 204px;
+    margin-top: -37px;
+    margin-left: 217px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-text__wrapper {
+    width: 1050px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-text {
+    margin-left: 10px;
+  }
+}
+
+.field-text__input {
+  box-sizing: border-box;
+  width: 260px;
+  font-size: 17px;
+  border: none;
+  border-bottom: 2px solid black;
+  padding-bottom: 15px;
+  padding-top: 7px;
+}
+
+.field-text__input {
+  font-size: 17px;
+  color: #cecece;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+
+.field-text__label {
+  display: inline-block;
+  margin-top: 2px;
+}
+
+@media (min-width: $tablet-width) {
+  .field-text__input {
+    box-sizing: border-box;
+    width: 372px;
+    margin-left: 24px;
+    font-size: 20px;
+    padding-left: 18px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-text__input {
+    width: 574px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .field-text__input--name {
+    box-sizing: border-box;
+    width: 424px;
+    margin-left: 22px;
+    font-size: 20px;
+    padding-left: 18px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-text__input--name {
+    width: 626px;
+  }
+}

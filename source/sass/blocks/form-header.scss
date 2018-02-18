@@ -1,16 +1,91 @@
 .form-header__title {
   width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.form-header__wrapper-title {
+  box-sizing: border-box;
+  padding-left: 43px;
+  padding-top: 72px;
+  display: block;
+  background-color: $light-gray;
+  height: 176px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-header__wrapper-title {
+    padding-top: 36px;
+    padding-left: 188px;
+    height: 153px;
+    position: relative;
+    background-color: $light-gray;
+    margin-bottom: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    .form-header__wrapper-title {
+      width: 1150px;
+      height: 196px;
+      padding-top: 38px;
+      padding-left: 335px;
+      margin-bottom: 120px;
+    }
+  }
+
+  .form-header__wrapper-title::before {
+    content: "";
+    display: block;
+    width: 768px;
+    height: 57px;
+    position: absolute;
+    top: -57px;
+    z-index: -10;
+    left: 0;
+    background-color: $light-gray;
+  }
+
+  .form-header__wrapper-title::after {
+    content: "";
+    display: block;
+    width: 768px;
+    height: 10px;
+    position: absolute;
+    top: 153px;
+    left: 0;
+    background-image:  url("../img/zigzag-fill-tablet.svg");
+    background-color: $light-gray;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-header__wrapper-title::after {
+    width: 1150px;
+    height: 16px;
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    background-color: $light-gray;
+    top: 183px;
+  }
 }
 
 .form-header__description {
   width: 260px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 24px;
+  margin-bottom: 23px;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
 }
 
 @media (min-width: $tablet-width) {
   .form-header__description {
     width: 668px;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 62px;
   }
 }
 

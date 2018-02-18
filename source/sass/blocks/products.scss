@@ -1,5 +1,6 @@
 .products {
   width: 320px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -7,8 +8,11 @@
     width: 668px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    margin-bottom: 52px;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .products {
@@ -35,15 +39,15 @@
 }
 
 .products__item {
-  box-sizing: border-box;
   height: 103px;
-  padding-top: 28px;
+  padding-top: 26px;
   padding-left: 28px;
 }
 
+
 @media (min-width: $tablet-width) {
   .products__item {
-    height: 118px;
+    height: 108px;
     padding-top: 28px;
     padding-left: 28px;
   }
@@ -75,7 +79,36 @@
   background-color: $dark-tiffany;
   flex-grow: 1;
   position: relative;
+  ;
 }
+
+@media (min-width: $tablet-width) {
+  .products__item--interior {
+    height: 92px;
+    border: none;
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .products__item--toys {
+    height: 92px;
+    border: transparent;
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__item--toys,
+  .products__item--interior {
+    background-position: 0px 103px;
+  }
+}
+
 
 .products__item--toys::after {
   content: "";
@@ -87,11 +120,19 @@
   right: 27px;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width){
   .products__item--toys::after {
-    top: 30px;
+    top: 31px;
+    right: 32px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .products__item--toys::after {
+    top:26px;
+  }
+}
+
 
 .products__item-wrapper {
   width: 130px;

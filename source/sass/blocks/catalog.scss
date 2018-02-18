@@ -1,7 +1,73 @@
-
-
-.catalog__wrapper-title {
+.catalog__wrapper--title {
+  box-sizing: border-box;
+  padding-left: 43px;
+  padding-top: 72px;
+  display: block;
+  background-color: $light-gray;
+  height: 176px;
   margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__wrapper--title {
+    padding-top: 40px;
+    padding-left: 198px;
+    height: 153px;
+    position: relative;
+    margin-bottom: 92px;
+  }
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper--title {
+    width: 1150px;
+    height: 196px;
+    padding-top: 36px;
+    padding-left: 344px;
+    margin-bottom: 130px;
+  }
+}
+
+  .catalog__wrapper--title::before {
+    content: "";
+    display: block;
+    width: 768px;
+    height: 57px;
+    position: absolute;
+    top: -57px;
+    z-index: -10;
+    left: 0;
+    background-color: $light-gray;
+  }
+
+  .catalog__wrapper--title::after {
+    content: "";
+    display: block;
+    width: 768px;
+    height: 10px;
+    position: absolute;
+    top: 153px;
+    left: 0;
+    background-image: url("../img/zigzag-fill-tablet.svg");
+    background-color: $light-gray;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper--title::after {
+    width: 1150px;
+    height: 16px;
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    background-color: $light-gray;
+    top: 183px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__title--main {
+    display: inline-block;
+    margin-left: 500px;
+    padding-top: 120px;
+  }
 }
 
 .catalog__list {
@@ -11,6 +77,148 @@
   width: 260px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.catalog__item {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  border: 1px solid $light-gray;
+  padding: 0;
+}
+
+
+.catalog__image {
+  display: block;
+  width: 260px;
+  height: auto;
+  margin-bottom: 26px;
+}
+
+.catalog__image--rabbit-tablet,
+.catalog__image--basket-tablet,
+.catalog__image--toys-tablet {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__image {
+    width: 334px;
+    height: 335px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.catalog__image--rabbit-desktop,
+.catalog__image--basket-desktop,
+.catalog__image--toys-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__image--rabbit-mobile,
+  .catalog__image--basket-mobile,
+  .catalog__image--toys-mobile
+   {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__image--rabbit-tablet,
+  .catalog__image--basket-tablet,
+  .catalog__image--toys-tablet {
+    display: block;
+  }
+}
+
+.catalog__title {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  padding-left: 28px;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.catalog__description {
+  margin: 0;
+  padding: 0;
+  padding-left: 28px;
+  font-size: 13px;
+  display: inline-block;
+  margin-bottom: 42px;
+  position: relative;
+}
+
+.catalog__description::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 205px;
+  height: 1px;
+  left: 28px;
+  top: 44px;
+  background-color: $light-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__description::after {
+    width: 270px;
+    left: 6px;
+    top: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__description::after {
+    width: 258px;
+    left: 0;
+    top: 62px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__description--toys::after {
+    width: 270px;
+    left: 6px;
+    top: 177px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__description--toys::after {
+    top: 40px;
+    left: 0;
+  }
+}
+
+.catalog__price {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  padding-left: 28px;
+  display: inline-block;
+  width: 76px;
+  margin-right: 103px;
+}
+
+.catalog__item--rabbit {
+  box-sizing: border-box;
+  min-height: 375px;
+}
+
+.catalog__item--basket {
+  box-sizing: border-box;
+  min-height: 375px;
+  margin-bottom: 29px;
+}
+
+.catalog__item--toys {
+  box-sizing: border-box;
+  min-height: 400px;
 }
 
 @media (min-width: $tablet-width) {
@@ -29,33 +237,119 @@
   }
 }
 
-.catalog__item {
-  display: block;
-  margin-bottom: 30px;
-  border: 1px solid $light-gray;
-}
-
 @media (min-width: $tablet-width) {
   .catalog__item {
     display: flex;
+    box-sizing: border-box;
+    padding: 0;
+    width: 668px;
+    margin-bottom: 50px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .catalog__column {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    padding-top: 26px;
+    width: 276px;
+    height: 335px;
+    margin-left: 28px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 9px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__description {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    margin-bottom: 200px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__description--toys {
+    margin-bottom: 178px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__price {
+    width: 145px;
+    font-size: 17px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__item--rabbit,
+  .catalog__item--basket,
+  .catalog__item--toys {
+    min-height: 335px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__item {
     display: block;
+    width: 316px;
+    height: 656px;
+    margin-bottom: 58px;
   }
 }
 
-.catalog__title {
-  font-size: 17px;
-  line-height: 24px;
+@media (min-width: $desktop-width) {
+  .catalog__image {
+    width: 316px;
+    height: 462px;
+    margin-bottom: -1px;
+  }
 }
 
-.catalog__description {
-  font-size: 13px;
+@media (min-width: $desktop-width) {
+  .catalog__image--rabbit-tablet,
+  .catalog__image--rabbit-mobile,
+  .catalog__image--basket-tablet,
+  .catalog__image--basket-mobile,
+  .catalog__image--toys-mobile,
+  .catalog__image--toys-tablet {
+    display: none;
+  }
 }
 
-.catalog__price {
-  font-size: 15px;
+@media (min-width: $desktop-width) {
+  .catalog__image--rabbit-desktop,
+  .catalog__image--basket-desktop,
+  .catalog__image--toys-desktop   {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__description {
+    margin-bottom: 62px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__description--toys {
+    margin-bottom: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__price {
+    margin-right: 86px;
+  }
 }

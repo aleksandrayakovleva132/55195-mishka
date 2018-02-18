@@ -1,0 +1,10 @@
+.copyright__text {
+  margin-right: 30px;
+  font-size: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    margin-top: 12px;
+  }
+}

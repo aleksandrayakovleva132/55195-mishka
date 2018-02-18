@@ -1,31 +1,186 @@
 .reviews {
-  width: 264px;
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 90px;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
-    width: 668px;
+    width: 768px;
+    height: 457px;
+    margin-left: 1px;
+    background-color: #ffffff;
+    background-image: url("../img/review-bg-tablet.jpg");
+    background-repeat: no-repeat;
+    position: relative;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
-    width: 1050px;
+    margin-left: 50px;
+    position: relative;
   }
 }
 
+
+.reviews__title {
+  font-size: 25px;
+  padding-left: 30px;
+  display: inline-block;
+  margin-bottom: 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__title {
+    font-size: 43px;
+    line-height: 43px;
+    margin-top: 79px;
+    margin-bottom: 52px;
+    margin-left: 45px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__title {
+    font-size: 53px;
+    margin-top: 78px;
+    margin-left: 173px;
+    margin-bottom: 58px;
+  }
+}
+
+.reviews__quote {
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  padding-right: 22px;
+}
+
+.reviews__text {
+  width: 260px;
+  font-size: 15px;
+  line-height: 30px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__text {
+    width: 670px;
+    font-size: 17px;
+    line-height: 31px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__text {
+    width: 780px;
+    margin-left: 145px;
+  }
+}
 
 .reviews__name {
   font-size: 17px;
   font-weight: 700;
   font-style: normal;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.reviews__adress {
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__adress {
+    margin-left: 20px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__name {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__name {
+    margin-left: 145px;
+    margin-top: 8px;
+    font-size: 17px;
+    width: 270px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__wrapper {
+    width: 276px;
+  }
+}
+
+.reviews__arrows {
+  display: flex;
+
+  width: 262px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 38px;
+}
+
+
+.reviews__button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__button {
+    box-sizing: border-box;
+    width: 176px;
+    position: absolute;
+    top: 78px;
+    right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__button {
+    right: 0;
+  }
+}
+
+.reviews::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 320px;
+  height: 6px;
+  background-image: url("../img/zigzag-line.svg");
 }
 
 
 .reviews__adress {
   font-style: normal;
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__adress {
+    margin-left: 145px;
+  }
 }
 
 .reviews__previous {
@@ -68,4 +223,57 @@
   top: 13px;
   left: 38px;
   background-image: url("../img/icon-right-arrow.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .reviews::after {
+    background-image:none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: 1050px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__arrows {
+    position: absolute;
+    width: 170px;
+    top: 354px;
+    right: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__arrows {
+    top: 306px;
+    right: -8px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__previous,
+  .reviews__next {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    position: relative;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews::after {
+    content: "";
+    position: absolute;
+    width: 1050px;
+    height: 23px;
+    top: 522px;
+    background-image: url("../img/zigzag-line.svg");
+    background-repeat: no-repeat;
+  }
 }

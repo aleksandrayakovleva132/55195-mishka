@@ -1,0 +1,49 @@
+.field-textarea__form {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 260px;
+  height: 140px;
+  line-height: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #c7c7c7;
+  font-size: 17px;
+  border: none;
+  margin-top: 23px;
+  border: 2px solid $dark-gray;
+  padding-bottom: 15px;
+  padding-top: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .field-textarea__form {
+    width: 501px;
+    height: 142px;
+    text-align: left;
+    font-size: 19px;
+    padding-top: 15px;
+    margin-top: -34px;
+    margin-left: 217px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-textarea__form {
+    margin-left: 226px;
+    width: 700px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-textarea__comment {
+    font-size: 17px;
+    margin-top: 55px;
+    margin-left: 419px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-textarea__comment {
+    margin-top: 48px;
+    margin-left: 626px;
+  }
+}

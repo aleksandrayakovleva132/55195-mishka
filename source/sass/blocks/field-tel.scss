@@ -1,0 +1,62 @@
+
+.field-tel__input {
+  box-sizing: border-box;
+  width: 260px;
+  font-size: 17px;
+  border: none;
+  border-bottom: 2px solid black;
+  padding-bottom: 15px;
+  padding-top: 8px;
+  margin-bottom: 33px;
+  position: relative;
+}
+
+.field-tel {
+  position: relative;
+}
+
+.field-tel::after {
+  content: "";
+  width: 26px;
+  height: 24px;
+  background-image: url("../img/phone.svg");
+  position: absolute;
+  top: 5px;
+  left: 226px;
+}
+
+@media (min-width: $tablet-width) {
+  .field-tel::after {
+    top: 4px;
+    left:  450px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-tel::after {
+    left: 676px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-tel {
+    margin-top: -26px;
+    margin-left: 217px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-tel__input {
+    box-sizing: border-box;
+    width: 500px;
+    padding-left: 20px;
+    padding-bottom: 16px;
+    background-color: $light-gray;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-tel__input {
+    width: 710px;
+  }
+}
