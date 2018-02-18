@@ -2,4 +2,75 @@
   color: $light-tiffany;
   margin: 0;
   padding: 0;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+
+@media (min-width: $tablet-width) {
+  .form-title__type {
+    margin-top: 13px;
+  }
+
+
+  .form-title__color {
+    margin-top: 69px;
+  }
+
+  .form-title__name {
+    margin-top: 68px;
+  }
+}
+
+.form-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: $light-tiffany;
+  width: 198px;
+  height: 1px;
+  top: 7px;
+  left: 62px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-title::after {
+    display: none;
+  }
+}
+.form-title__color {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-title__phone {
+    margin-top: 66px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-title__email {
+    margin-top: 36px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-title__another {
+    margin-top: 68px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-title {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-title {
+    margin-left: 112px;
+  }
 }

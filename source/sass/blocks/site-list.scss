@@ -3,3 +3,240 @@
   font-weight: 700;
   color: $black;
 }
+
+
+.site-list__item {
+  display: flex;
+  border-bottom: 1px solid $light-gray;
+  padding-left: 76px;
+  align-items: center;
+  text-align: right;
+  height: 80px;
+  width: 320px;
+}
+
+.site-list__item--new,
+.site-list__item--sale {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item--new,
+  .site-list__item--sale {
+    display: none;
+  }
+}
+
+
+.site-list__item--active {
+  &:hover {
+    color: $black;
+  }
+}
+
+.site-list__item:nth-child(3) {
+  position: relative;
+}
+
+.site-list__item:nth-child(3)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 32px;
+  left: 32px;
+  background-image: url("../img/search.svg");
+}
+
+.site-list__item:nth-child(3):hover.site-list__item:nth-child(3)::before {
+  background-image: url("../img/search-hover.svg");
+}
+
+.site-list__item:nth-child(3):active.site-list__item:nth-child(3)::before {
+  background-image: url("../img/search-active.svg");
+}
+
+.site-list__item:nth-child(4) {
+  position: relative;
+}
+
+.site-list__item:nth-child(4)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 21px;
+  height: 18px;
+  top: 30px;
+  left: 31px;
+  background-image: url("../img/cart.svg");
+  background-repeat: no-repeat;
+}
+
+.site-list__item:nth-child(4):hover.site-list__item:nth-child(4)::before {
+  background-image: url("../img/cart-hover.svg");
+}
+
+.site-list__item:nth-child(4):active.site-list__item:nth-child(4)::before {
+  background-image: url("../img/cart-active.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    border: none;
+  }
+  .site-list__link--search {
+    display: none;
+  }
+
+  .site-list__item--search {
+    width: 84px;
+    height: 90px;
+    box-sizing: border-box;
+    border: 1px solid $light-gray;
+    border-top: none;
+    border-bottom: none;
+    position: absolute;
+    top: -127px;
+    left: 329px;
+  }
+
+  .site-list__item:nth-child(3)::before {
+    top: 36px;
+  }
+
+  .site-list__item--basket {
+    width: 315px;
+    position: absolute;
+    top:-217px;
+    left: 420px;
+    height: 90px;
+    border: none;
+  }
+
+  .site-list__item:nth-child(4)::before {
+    left: 24px;
+    top: 36px;
+
+  }
+
+  .site-list__item--catalog {
+    font-size: 15px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    width: 165px;
+    height: 20px;
+    text-align: left;
+    box-sizing: border-box;
+  }
+
+
+  .site-list__item--form {
+    font-size: 15px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 165px;
+    height: 20px;
+    text-align: left;
+    box-sizing: border-box;
+    position: absolute;
+    top: 107px;
+    left: 218px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item--new,
+  .site-list__item--sale {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item--catalog {
+    position: absolute;
+    font-size: 17px;
+    box-sizing: border-box;
+    width: 185px;
+    height: 89px;
+    border-right: 1px solid $light-gray;
+    top: 0;
+    padding-top: 32px;
+    left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item--form {
+    font-size: 17px;
+    box-sizing: border-box;
+    padding-left: 35px;
+    padding-top: 32px;
+    height: 89px;
+    width: 210px;
+    top: 0;
+    left: 234px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item--search {
+    position: absolute;
+    top: -108px;
+    left: 710px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item--basket {
+    top: -204px;
+    left: 802px;
+    box-sizing: border-box;
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item--new {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 15px;
+    text-align: left;
+    padding-top: 17px;
+    width: 185px;
+    height: 40px;
+    position: absolute;
+    top: 90px;
+    left: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item--sale {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 15px;
+    text-align: left;
+    padding-top: 16px;
+    padding-left: 34px;
+    width: 208px;
+    height: 40px;
+    position: absolute;
+    top: 90px;
+    left: 235px;
+  }
+}

@@ -1,0 +1,62 @@
+.field-email__input {
+  box-sizing: border-box;
+  width: 260px;
+  font-size: 17px;
+  border: none;
+  border-bottom: 2px solid black;
+  padding-bottom: 15px;
+  padding-top: 8px;
+  margin-bottom: 33px;
+  position: relative;
+}
+
+.field-email {
+  position: relative;
+}
+
+.field-email::after {
+  content: "";
+  width: 32px;
+  height: 21px;
+  background-image: url("../img/mail.svg");
+  position: absolute;
+  top: 9px;
+  left: 224px;
+}
+
+@media (min-width: $tablet-width) {
+  .field-email::after {
+    left: 448px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-email::after {
+    left: 676px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-email {
+    margin-top: -30px;
+    margin-left: 215px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-email__input {
+    box-sizing: border-box;
+    width: 500px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    background-color: $light-gray;
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-email__input {
+    width: 710px;
+  }
+}

@@ -1,12 +1,38 @@
-
-
 .page-main__wrapper-title {
   box-sizing: border-box;
   display: flex;
+  justify-content: center;
   min-height: 282px;
+  padding-top: 69px;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-color: blue; /*временный код*/
+  background-size: 185%;
+  background-position: center -25px;
+}
+
+.page-main__title {
+  text-align: center;
+  width: 260px;
+}
+
+.page-main__catalog {
+  margin-bottom: 55px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__catalog {
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__catalog {
+    margin-bottom: 108px;
+  }
+}
+
+.page-main__delivery {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -14,32 +40,65 @@
     width: 668px;
     margin-left: auto;
     margin-right: auto;
-    min-height: 627px;
-    background-image: none;
+    min-height: 570px;
+    position: relative;
+    background-image: url("../img/hero-tablet.jpg");
+    background-position: center;
+    background-size: 668px 570px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    display: inline-block;
+    height: 108px;
+    width: 510px;
+    position: absolute;
+    top: 96px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__logo--mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__logo--tablet {
+    width: 115px;
+    height: 46px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-main__title br {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__delivery {
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 489px;
+    margin-top: 17px;
+    margin-right: auto;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__delivery {
+    margin-left: 870px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__wrapper-title {
     width: 1050px;
-  }
-}
-
-.page-main__title {
-  display: inline-block;
-  text-align: center;
-  width: 245px;
-  height: 92px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 72px;
-}
-
-@media (min-width: $tablet-width) {
-  .page-main__title {
-    min-height: 108px;
-    width: 510px;
-    margin-top: 157px;
+    height: 558px;
   }
 }
 

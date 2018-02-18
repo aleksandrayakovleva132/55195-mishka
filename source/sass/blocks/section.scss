@@ -1,9 +1,84 @@
+.section--type {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 44px;
+}
+
+@media (min-width: $tablet-width) {
+  .section--type {
+    margin-bottom: 34px;
+  }
+}
+
+.section--color {
+  box-sizing: border-box;
+  margin-bottom: 34px;
+}
+
 @media (min-width: $tablet-width) {
   .section--color {
+    height: 306px;
+    display: flex;
     background-color: $light-gray;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .section--color {
+    height: 228px;
+  }
+}
+
+.section--name {
+  box-sizing: border-box;
+  margin-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .section--name {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section--name {
+    margin-bottom: 53px;
+  }
+}
+
+
+.section--phone {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 108px;
+}
+
+.section--email {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120px;
+}
+
+.section--another {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 216px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $desktop-width)  {
+  .section--another {
+    margin-bottom: -10px;
+  }
+}
 .section--phone {
   padding: 0;
   margin: 0;
@@ -11,6 +86,7 @@
 
 @media (min-width: $tablet-width) {
   .section--phone {
+    box-sizing: border-box;
     background-color: $light-gray;
   }
 }
@@ -23,5 +99,6 @@
 @media (min-width: $tablet-width) {
   .section--email {
     background-color: $light-gray;
+
   }
 }

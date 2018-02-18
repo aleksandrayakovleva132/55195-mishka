@@ -4,9 +4,40 @@
   margin-left: auto;
 }
 
+.order-form__button {
+  width: 260px;
+  box-sizing: border-box;
+  margin-bottom: 55px;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form__button {
+    box-sizing: border-box;
+    width: 230px;
+    font-size: 17px;
+    margin-left: 50px;
+    font-weight: 700;
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__button {
+    margin-left: 224px;
+  }
+}
+
+
 @media (min-width: $tablet-width) {
   .order-form {
     width: 768px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-radio__wrapper {
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 
